@@ -39,7 +39,12 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject"
+    "eject": "craco eject",
+    "docker:build": "docker build -t wedding-guest-portal-fe .",
+    "docker:run": "docker run -p 3000:80 wedding-guest-portal-fe",
+    "docker:dev": "docker-compose --profile dev up --build",
+    "docker:prod": "docker-compose up --build",
+    "docker:stop": "docker-compose down"
   },
   "eslintConfig": {
     "extends": [
